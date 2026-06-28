@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-
+    font-size: 12px;
 }
 
 body {
@@ -36,6 +36,9 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .search-container {
@@ -172,13 +175,16 @@ nav {
     width: 100%;
     height: 100vh;
     gap: 40px;
-    padding: 25px 0px;
+    padding: 77px 0px;
     font-size: 12px;
 }
 
 .body-section-1 {
     width: 216px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .body-section-2 {
@@ -193,40 +199,39 @@ nav {
     background-color: orange;
 }
 
-.sidebar-section-1{
+.sidebar-section-1 {
     width: 100%;
     height: 242px;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cover-photo-container-sidebar{
+.cover-photo-container-sidebar {
     width: 100%;
     height: 56px;
     overflow: hidden;
 }
 
-.cover-photo-sidebar{
+.cover-photo-sidebar {
     height: 100%;
     width: 100%;
 }
 
-.sidebar-border-rounded{
+.sidebar-border-rounded {
     border-radius: 12px;
 }
 
-.hide-outer-elements{
+.hide-outer-elements {
     overflow: hidden;
 }
 
-.image-sidebar-section-1{
+.image-sidebar-section-1 {
     display: flex;
     flex-direction: column;
 }
 
-.outer-circle-profile-photo-sidebar{
+.outer-circle-profile-photo-sidebar {
     width: 76px;
     height: 76px;
     overflow: hidden;
@@ -238,19 +243,19 @@ nav {
     padding: 2px;
 }
 
-.profile-photo-container-sidebar{
+.profile-photo-container-sidebar {
     width: 100%;
     height: 100%;
     border-radius: 100%;
     overflow: hidden;
 }
 
-.profile-photo-sidebar{
+.profile-photo-sidebar {
     width: 100%;
     height: 100%;
 }
 
-.profile-info-and-company-container{
+.profile-info-and-company-container {
     display: flex;
     flex-direction: column;
     padding: 0px 16px;
@@ -260,26 +265,26 @@ nav {
     gap: 10px;
 }
 
-.profile-info-siebar{
+.profile-info-siebar {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.profile-name-sidebar{
+.profile-name-sidebar {
     font-size: 20px;
     font-weight: bolder;
 }
 
-.address-sidebar{
+.address-sidebar {
     color: #666666;
 }
 
-.company-name-sidebar{
+.company-name-sidebar {
     font-weight: 700;
 }
 
-.company-img-conatiner-sidebar{
+.company-img-conatiner-sidebar {
     width: 24px;
     height: 24px;
     overflow: hidden;
@@ -287,14 +292,141 @@ nav {
     background-color: red;
     box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.297);
 }
-.company-img-sidebar{
+
+.body-component-border {
+    border: 1px solid #E4E3DF;
+}
+
+.company-img-sidebar {
     width: 100%;
     height: 100%;
 }
-.company-info-siebar{
+
+.company-info-siebar {
     display: flex;
     gap: 5px;
     align-items: center;
     justify-content: flex-start;
     left: 0;
+}
+
+.sidebar-section-2 {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading{
+    color: #000000E6;
+    font-weight: 700;
+}
+
+.metric-values {
+    color: #2D7ACA;
+    font-weight: 700;
+}
+
+.sidebar-section-2-conatiner {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-section-3 {
+    width: 100%;
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sidebar-section-3-img-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.body-component-background-color {
+    background-color: #FFFF;
+}
+
+.sidebar-section-3-img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-section-3-header {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-left: 15px;
+}
+
+.sidebar-section-3-header-img-and-label-container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sidebar-section-3-label{
+    font-size: 16px;
+}
+
+.company-activity{
+    width: 85%;
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-activity-heading{
+    color: #000000BF;
+    font-weight: 600;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #E4E3DF;
+    width: 100%;
+}
+
+.try-premium-label{
+    color: #1F1F1F;
+    font-weight: 700;
+}
+
+.sidebar-section-3-label-container{
+    justify-content: start;
+    align-items: start;
+    gap:8px
+}
+
+.advertise-on-linkedin-container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-section-4 {
+    width: 100%;
+    padding: 4px 0px;
+}
+
+.sidebar-section-4-heading{
+    color: #000000E6;
+}
+
+.sidebar-section-4-icon-and-label-container{
+    display: flex;
+    gap: 10px;
+    padding: 8px 16px;
 }
